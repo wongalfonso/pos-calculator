@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import PosReducer from './components/HomePage/Projects/PosCalc/PosCalcReducer';
+import PosReducer from './AppReducer';
 
 const rootReducer = combineReducers({
   posCalc: PosReducer

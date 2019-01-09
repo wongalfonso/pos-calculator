@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ReactGA from 'react-ga';
 import Modal from 'react-modal';
-import ProjectClose from './../../ProjectClose';
 import TenderScreen from './TenderScreen';
 import DrinksScreen from './DrinksScreen';
 import FoodScreen from './FoodScreen';
 import SavedOrders from './SavedOrders';
-import { getMenu, changeScreen, selected, removeSelected, cancelOrder, modalPosOpen, modalPosClose, saveOrder } from './PosCalcActions';
+import { getMenu, changeScreen, selected, removeSelected, cancelOrder, modalPosOpen, modalPosClose, saveOrder } from './AppActions';
 
 const modalStyle = {
   overlay: {
@@ -55,12 +53,6 @@ class App extends Component {
   closeModal() {
     const { dispatch } = this.props;
     dispatch(modalPosClose());
-  }
-  gitHub() {
-    ReactGA.event({
-      category: 'Visited GitHub from Modal',
-      action: 'From Change Modal'
-    })
   }
   cancelOrderModal() {
     return (
