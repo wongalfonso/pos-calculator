@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
-import twenty from '../../../../../../public/images/twenty-dollar-bill.jpg';
-import ten from '../../../../../../public/images/ten-dollar-bill.jpg';
-import five from '../../../../../../public/images/five-dollar-bill.jpg';
+import twenty from './../../../public/images/twenty-dollar-bill.jpg'
+import ten from './../../../public/images/ten-dollar-bill.jpg';
+import five from './../../../public/images/five-dollar-bill.jpg';
 import { modalTenderClose, calculateOrder, inputDigit } from './AppActions';
 
 const modalStyle = {
