@@ -8,3 +8,9 @@ app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.static('dist'));
 app.use(bodyParser.json());
+
+app.get("/menu", (req, res) => {
+  res.send(menu);
+})
+
+module.exports = app;
