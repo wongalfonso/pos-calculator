@@ -1,0 +1,126 @@
+{
+  "coffees": [
+    {
+      "hotCoffee": [
+        {
+          "name": "americano",
+          "tall": 2.65,
+          "grande": 3.25,
+          "venti": 4.00
+        },
+        {
+          "name": "hot coffee",
+          "tall": 2.45,
+          "grande": 3.05,
+          "venti": 3.65
+        },
+        {
+          "name": "caffe misto",
+          "tall": 3.45,
+          "grande": 4.00,
+          "venti": 4.65
+        }
+      ],
+      "latte": [
+        {
+          "name": "caramel macchiatto",
+          "tall": 3.25,
+          "grande": 4.25,
+          "venti": 4.75
+        },
+        {
+          "name": "white mocha",
+          "tall": 3.35,
+          "grande": 4.35,
+          "venti": 4.80
+        },
+        {
+          "name": "mocha",
+          "tall": 3.25,
+          "grande": 4.25,
+          "venti": 4.75
+        },
+        {
+          "name": "cinnamon dolce latte",
+          "tall": 3.25,
+          "grande": 4.25,
+          "venti": 4.75
+        },
+        {
+          "name": "vanilla latte",
+          "tall": 3.25,
+          "grande": 4.25,
+          "venti": 4.75
+        },
+        {
+          "name": "black and white mocha",
+          "tall": 3.25,
+          "grande": 4.35,
+          "venti": 4.85
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "breakfast": [
+        {
+          "name" : "bacon gouda",
+          "price":  4.25
+        },
+        {
+          "name" : "carved ham and swiss",
+          "price":  4.75
+        },
+        {
+          "name" : "double smoked bacon",
+          "price":  4.75
+        },
+        {
+          "name" : "chicken sausage & bacon",
+          "price": 4.50
+        },
+        {
+          "name" : "reduced-fat turkey bacon",
+          "price": 4.25
+        },
+        {
+          "name": "sausage, cheddar & egg",
+          "price" : 4.75
+        }
+      ]
+    },
+    {
+      "bakery": [
+        {
+          "name" : "butter croissant",
+          "price": 2.50
+        },
+        {
+          "name" : "cheese danish",
+          "price": 2.75
+        },
+        {
+          "name" :"chocolate croissant",
+          "price": 2.50
+        },
+        {
+          "name" : "classic coffee cake",
+          "price": 2.00
+        },
+        {
+          "name" : "lemon loaf",
+          "price": 3.50
+        },
+        {
+          "name" : "banana loaf",
+          "price": 3.25
+        },
+        {
+          "name" : "old-fashioned doughnut",
+          "price": 2.00
+        }
+      ]
+    }
+  ]
+}
