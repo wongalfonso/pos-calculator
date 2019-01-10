@@ -39,15 +39,6 @@ module.exports = {
         use: { loader: 'file-loader' }
       },
       {
-        test: /\.mp4$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]'
-          }
-        }]
-      },
-      {
         test: /\.pdf$/,
         loader: 'file?name=[name].[ext]'
       }

@@ -1,0 +1,66 @@
+@import './posCalc.scss';
+
+$sm: 37.5em;
+$md: 56.25em;
+$lg: 75em;
+$xl: 93.75em;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html, body {
+  margin: 0; 
+  padding: 0;
+  right: 0;
+  height: 100%; 
+  width: 100%;  
+}
+html {
+  font-size: .625em;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $sm) {
+  .container {
+    max-width: 54rem;
+  }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+  .container {
+    min-width: 54rem;
+    max-width: 68rem;
+  }
+}
+
+@media screen and (min-width: $md) and (max-width: $lg) {
+  .container {
+    min-width: 68rem;
+    max-width: 85rem;
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl) {
+  .container {
+    min-width: 80rem;
+    max-width: 95rem;
+  }
+}
+@media screen and (min-width: $xl) {
+  .container {
+    min-width: 95rem;
+    max-width: 120rem;
+  }
+}

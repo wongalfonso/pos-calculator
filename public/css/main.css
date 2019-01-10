@@ -1,0 +1,381 @@
+.ReactModal__Overlay, .ReactModal__Overlay--after-open {
+  background-color: rgba(0, 0, 0, 0.35) !important; }
+
+.ReactModal_POS, .ReactModal_TENDER {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 4px solid #cccccc;
+  background: white;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 50rem;
+  outline: none;
+  padding: 20px;
+  transform: translate(-50%, -50%); }
+
+.ReactModal_POS {
+  height: 16rem; }
+
+.ReactModal_TENDER {
+  height: 17rem; }
+
+.pos-modal {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 2rem; }
+  .pos-modal-btns {
+    display: flex;
+    justify-content: space-between; }
+    .pos-modal-btns button {
+      font-size: 1.8rem;
+      padding: 1rem;
+      width: 12rem;
+      height: 5rem;
+      border-radius: 8px; }
+    .pos-modal-btns-cancel {
+      background: -webkit-linear-gradient(to bottom, #9e9841, #d3cb58);
+      background: linear-gradient(to bottom, #9e9841, #d3cb58); }
+    .pos-modal-btns-submit {
+      background: -webkit-linear-gradient(to bottom, #ed0000, #9f0000);
+      background: linear-gradient(to bottom, #ed0000, #9f0000); }
+    .pos-modal-btns-save {
+      background: -webkit-linear-gradient(to bottom, #259805, #549a41);
+      background: linear-gradient(to bottom, #259805, #549a41); }
+
+.tender-modal-message {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.tender-modal-btns {
+  text-align: right; }
+  .tender-modal-btns button {
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 12rem;
+    height: 5rem;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(to bottom, #259805, #549a41);
+    background: linear-gradient(to bottom, #259805, #549a41); }
+
+#posCalcImage {
+  background: -webkit-linear-gradient(to left, #636363, #242424);
+  background: linear-gradient(to left, #636363, #242424); }
+
+#posCalcProject {
+  min-height: 100vh;
+  background: -webkit-linear-gradient(to left, #636363, #242424);
+  background: linear-gradient(to left, #636363, #242424); }
+  #posCalcProject .pos-container .pos-header {
+    font-size: 5rem;
+    width: 100%;
+    color: white;
+    border-bottom: solid white 2px; }
+  #posCalcProject .pos-container .pos-menus {
+    display: flex;
+    justify-content: space-evenly; }
+    #posCalcProject .pos-container .pos-menus-functions {
+      flex: 1 0 40%;
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0; }
+      #posCalcProject .pos-container .pos-menus-functions-btns {
+        font-size: 2rem;
+        padding: 2rem;
+        border-radius: 8px;
+        width: 12rem; }
+        #posCalcProject .pos-container .pos-menus-functions-btns:hover {
+          opacity: .8; }
+        #posCalcProject .pos-container .pos-menus-functions-btns--default {
+          background: -webkit-linear-gradient(to bottom, #5c5c5c, #151515);
+          background: linear-gradient(to bottom, #5c5c5c, #151515);
+          color: white;
+          border-right: black;
+          border-bottom: black; }
+        #posCalcProject .pos-container .pos-menus-functions-btns--active {
+          background-color: white;
+          color: black;
+          border-top: black;
+          border-left: black; }
+    #posCalcProject .pos-container .pos-menus-screens {
+      flex: 1 0 60%;
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem 0; }
+      #posCalcProject .pos-container .pos-menus-screens-btns {
+        font-size: 2rem;
+        padding: 2rem;
+        border-radius: 8px;
+        width: 12rem; }
+        #posCalcProject .pos-container .pos-menus-screens-btns:hover {
+          opacity: .8; }
+        #posCalcProject .pos-container .pos-menus-screens-btns--default {
+          background: -webkit-linear-gradient(to bottom, #57c740, #3b882b);
+          background: linear-gradient(to bottom, #57c740, #3b882b);
+          color: white;
+          border-right: #3b882b;
+          border-bottom: #3b882b; }
+        #posCalcProject .pos-container .pos-menus-screens-btns--active {
+          background-color: white;
+          color: black;
+          border-top: black;
+          border-left: black; }
+  #posCalcProject .pos-container .pos-order-screen {
+    display: flex;
+    max-height: 67rem; }
+    #posCalcProject .pos-container .pos-order-screen-list {
+      flex: 1 0 40%; }
+      #posCalcProject .pos-container .pos-order-screen-list-items {
+        min-height: 384px;
+        max-height: 384px;
+        overflow-y: scroll;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.8rem;
+        border: solid #6d6d6d 4px;
+        background-color: #f5f58f; }
+        #posCalcProject .pos-container .pos-order-screen-list-items table {
+          width: 100%; }
+          #posCalcProject .pos-container .pos-order-screen-list-items table tbody {
+            vertical-align: baseline;
+            min-height: 338px; }
+            #posCalcProject .pos-container .pos-order-screen-list-items table tbody .items {
+              vertical-align: inherit;
+              display: flex;
+              justify-content: space-between;
+              padding: 1rem; }
+              #posCalcProject .pos-container .pos-order-screen-list-items table tbody .items-selected {
+                background-color: #e4d400; }
+              #posCalcProject .pos-container .pos-order-screen-list-items table tbody .items td {
+                vertical-align: inherit; }
+      #posCalcProject .pos-container .pos-order-screen-list-total {
+        width: 100%;
+        padding: 2rem;
+        height: 20rem;
+        border: solid #6d6d6d 4px;
+        background-color: #c9f4c9; }
+        #posCalcProject .pos-container .pos-order-screen-list-total tbody {
+          font-size: 1.6rem; }
+          #posCalcProject .pos-container .pos-order-screen-list-total tbody tr td:last-child {
+            text-align: right; }
+          #posCalcProject .pos-container .pos-order-screen-list-total tbody .final-total {
+            font-size: 2.2rem; }
+      #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids {
+        display: flex;
+        justify-content: space-between; }
+        #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids-btns {
+          margin: 1rem;
+          font-size: 1.5rem;
+          padding: 2rem;
+          border-radius: 8px;
+          width: 12rem; }
+          #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids-btns:hover {
+            opacity: .8; }
+        #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids .void, #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids .cancel {
+          background: -webkit-linear-gradient(to bottom, #ed0000, #9f0000);
+          background: linear-gradient(to bottom, #ed0000, #9f0000);
+          border: #9f0000;
+          color: white; }
+        #posCalcProject .pos-container .pos-order-screen-list .pos-order-screen-voids .save {
+          background: -webkit-linear-gradient(to bottom, #017907, #005905);
+          background: linear-gradient(to bottom, #017907, #005905);
+          border: #005905;
+          color: white; }
+    #posCalcProject .pos-container .pos-order-screen .side-screen {
+      flex: 1 0 60%;
+      background-color: white;
+      max-width: 692px;
+      border: solid #6d6d6d 4px; }
+      #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen {
+        font-size: 2.5rem;
+        display: flex; }
+        #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash {
+          width: 40%;
+          text-align: center;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          -ms-flex-direction: column;
+          justify-content: space-between; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash-header {
+            margin: 1rem; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash-bills {
+            max-height: 13rem;
+            margin-bottom: 1rem; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash-btns button {
+            font-size: 3rem;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-bottom: solid 3px #bbbbbb;
+            background: -webkit-linear-gradient(to bottom, #bbbbbb, #e8e8e8);
+            background: linear-gradient(to bottom, #bbbbbb, #e8e8e8); }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash-btns .round-up {
+            padding: 1.5rem; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-cash-btns .exact {
+            padding: 2rem; }
+        #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs {
+          width: 60%;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          -ms-flex-direction: column;
+          justify-content: space-around; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs-total {
+            width: 100%;
+            display: flex;
+            height: 6rem;
+            justify-content: space-around;
+            margin: 1rem 0; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs-total .total-input-screen {
+              min-width: 27rem;
+              max-width: 27rem;
+              overflow: hidden;
+              padding: 1rem;
+              border: solid #bbbbbb 2px;
+              height: 8rem;
+              display: flex;
+              justify-content: flex-end;
+              align-items: baseline;
+              font-size: 4.5rem; }
+              #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs-total .total-input-screen span {
+                width: 2rem; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs-row {
+            display: flex;
+            justify-content: space-evenly; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .tender-screen-inputs-row button {
+              font-size: 3rem;
+              padding: 2rem;
+              min-width: 8rem;
+              border-radius: 8px;
+              margin-bottom: 1rem;
+              background: -webkit-linear-gradient(to bottom, #f5f54f, #ffff95);
+              background: linear-gradient(to bottom, #f5f54f, #f5f58f); }
+      #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        text-align: center; }
+        #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row {
+          padding: 2rem;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns {
+            width: 12rem;
+            padding: 1.2rem;
+            font-size: 2rem;
+            border-radius: 8px;
+            min-height: 10rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns:hover {
+              opacity: .8; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns-coffee {
+              background: -webkit-linear-gradient(to bottom, #9b3030, #ed4e4e);
+              background: linear-gradient(to bottom, #9b3030, #ed4e4e);
+              border-bottom: 3px solid #9b3030; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns-latte {
+              background: -webkit-linear-gradient(to bottom, #b9b13c, #ede24e);
+              background: linear-gradient(to bottom, #b9b13c, #ede24e);
+              border-bottom: 3px solid #b9b13c; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns-size {
+              color: white;
+              background: -webkit-linear-gradient(to bottom, #3032ca, #4749e8);
+              background: linear-gradient(to bottom, #3032ca, #4749e8);
+              border-bottom: 3px solid #3335aa; }
+              #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row .coffee-btns-size--selected {
+                background: #01024a;
+                box-shadow: 4px 5px 18px #1b1ed0; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .drinks-screen-row-break {
+            font-size: 3rem;
+            width: 100%;
+            border-bottom: 1px solid lightgrey; }
+      #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%; }
+        #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen-row {
+          padding: 2rem;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen-row .food-btns {
+            width: 12rem;
+            padding: 1.2rem;
+            font-size: 2rem;
+            border-radius: 8px;
+            min-height: 10rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen-row .food-btns:hover {
+              opacity: .8; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen-row .food-btns-bakery {
+              background: -webkit-linear-gradient(to bottom, #9b3030, #ed4e4e);
+              background: linear-gradient(to bottom, #9b3030, #ed4e4e);
+              border-bottom: 3px solid #9b3030; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .food-screen-row .food-btns-breakfast {
+              background: -webkit-linear-gradient(to bottom, #b9b13c, #ede24e);
+              background: linear-gradient(to bottom, #b9b13c, #ede24e);
+              border-bottom: 3px solid #b9b13c; }
+      #posCalcProject .pos-container .pos-order-screen .side-screen .saved-screen {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        background: -webkit-linear-gradient(to bottom, #dcdbc9, #9c9c9c);
+        background: linear-gradient(to bottom, #dcdbc9, #9c9c9c);
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll; }
+        #posCalcProject .pos-container .pos-order-screen .side-screen .saved-screen-row {
+          height: 100%;
+          width: 100%; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .saved-screen-row button {
+            font-size: 1.5rem;
+            margin: 2rem;
+            padding: 1rem;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 16rem;
+            width: 16rem; }
+            #posCalcProject .pos-container .pos-order-screen .side-screen .saved-screen-row button div:first-child {
+              font-size: 2rem;
+              font-weight: bold; }
+          #posCalcProject .pos-container .pos-order-screen .side-screen .saved-screen-row-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(20%, -50%);
+            font-size: 5rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; }
+
+html {
+  font-size: .625em; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.7;
+  box-sizing: border-box; }

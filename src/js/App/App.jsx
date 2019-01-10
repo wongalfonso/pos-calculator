@@ -12,6 +12,9 @@ const modalStyle = {
     zIndex: 199
   }
 }
+
+Modal.setAppElement('#app');
+
 class App extends Component {
   constructor(props) {
     super(props);

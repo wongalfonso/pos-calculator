@@ -37,7 +37,9 @@ class TenderScreen extends Component {
   }
 
   render() {
-    const { total, tenderModalIsOpen, returnedAmount, inputBox, payment } = this.props;       
+    const { total, tenderModalIsOpen, returnedAmount, inputBox, payment } = this.props;   
+    let checkTotal = total;
+    if (checkTotal == undefined) {checkTotal = 0;}  
     return (
       <div className="tender-screen">
         <Modal
@@ -72,8 +74,8 @@ class TenderScreen extends Component {
 
           <div className="tender-screen-cash-btns">
             <button className='round-up'
-              onClick={() => this.calculate(Math.ceil(total))}>
-              $ {Math.ceil(total).toFixed(2)}
+              onClick={() => this.calculate(Math.ceil(checkTotal))}>
+              $ {Math.ceil(checkTotal).toFixed(2)}
             </button>
           </div>
           <div className="tender-screen-cash-btns">
