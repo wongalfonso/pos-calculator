@@ -21,7 +21,7 @@
   "author": "Alfonso Wong",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
@@ -35,7 +35,6 @@
     "uglifyjs-webpack-plugin": "^2.1.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-airbnb": "^2.5.1",
